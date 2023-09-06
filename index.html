@@ -17,7 +17,9 @@
 </head>
 <body>
     <div id="app">
-        <ul>
+        <!--SE randomEmail contiene 10 email-->
+        <ul v-if="randomEmail.length == 10">
+            <!--ALLORA per ogni email contenuta in randomEmail stampo email nella lista-->
             <li v-for="email in randomEmail">
                  {{ email }} 
             </li>
